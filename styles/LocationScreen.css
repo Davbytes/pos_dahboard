@@ -1,0 +1,125 @@
+/* src/styles/LocationScreen.css */
+.loc-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 60%, #3b82f6 100%);
+}
+
+.loc-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 420px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.loc-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.loc-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loc-logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.loc-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 6px;
+}
+
+.loc-sub {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin-bottom: 28px;
+}
+
+.loc-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.loc-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.loc-branch {
+  padding: 14px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.loc-branch:hover,
+.loc-branch.active {
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+.loc-branch-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.loc-branch.active .loc-branch-dot {
+  background: var(--blue);
+}
+
+.loc-btn {
+  width: 100%;
+  padding: 13px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.loc-btn:hover:not(:disabled) {
+  background: var(--blue-dark);
+}
+
+.loc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

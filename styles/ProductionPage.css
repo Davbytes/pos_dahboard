@@ -1,0 +1,30 @@
+/* src/styles/ProductionPage.css — imported in ProductionPage.jsx if needed */
+/* Stats row is inline via className; define here for reuse */
+.prod-stats {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.prod-stat-card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  padding: 14px 20px;
+  flex: 1;
+}
+
+.prod-stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.prod-stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gray-800);
+  margin-top: 4px;
+}
